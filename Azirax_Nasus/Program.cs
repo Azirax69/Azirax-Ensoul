@@ -66,10 +66,6 @@
             drawMenu.Add(new MenuBool("drawE", "Draw E Range"));
             MainMenu.Add(drawMenu);
 
-            var miscMenu = new Menu("Misc Config", "Misc");
-            miscMenu.Add(new MenuBool("aaDisable", "Disable AA if Q isn't active during LastHit and Mixed")).SetValue(false);
-            MainMenu.Add(miscMenu);
-
             Chat.PrintChat("Azirax Nasus, Any problem, report in my discord = Azirax#5495");
 
 
