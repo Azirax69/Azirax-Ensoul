@@ -120,10 +120,8 @@
 
             }
 
-            if (MainMenu["Combo"]["comboR"].GetValue<MenuBool>().Enabled && R.IsReady())
-            if (ObjectManager.Player.CountEnemyHeroesInRange(750) >= 1)
-            {
-                R.Cast();
+            if (MainMenu["Combo"]["comboR"].GetValue<MenuBool>().Enabled && R.IsReady() && ObjectManager.Player.CountEnemyHeroesInRange(750) >= 1) {
+            R.Cast();
             }
 
         }
