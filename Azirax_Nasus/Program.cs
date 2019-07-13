@@ -1,4 +1,4 @@
-﻿namespace Nasus
+namespace Nasus
 {
     using System;
     using System.Linq;
@@ -60,19 +60,13 @@
             lasthitMenu.Add(new MenuBool("farmQ", "Use Q", true));
             MainMenu.Add(lasthitMenu);
 
-            var drawMenu = new Menu("Draw", "Draw Settings");
-            drawMenu.Add(new MenuBool("drawQ", "Draw Q Range"));
-            drawMenu.Add(new MenuBool("drawW", "Draw W Range"));
-            drawMenu.Add(new MenuBool("drawE", "Draw E Range"));
-            MainMenu.Add(drawMenu);
-
             Chat.PrintChat("Azirax Nasus, Any problem, report in my discord = Azirax#5495");
 
 
             MainMenu.Attach();
            
             Game.OnUpdate += OnUpdate;
-            Drawing.OnDraw += OnDraw;
+ 
         }
 
         // ainda estou tentando corrigir os combos by: Azirax#5495
@@ -120,8 +114,9 @@
 
             }
 
-            if (MainMenu["Combo"]["comboR"].GetValue<MenuBool>().Enabled && R.IsReady() && ObjectManager.Player.CountEnemyHeroesInRange(750) >= 1) {
-            R.Cast();
+            if (MainMenu["Combo"]["comboR"].GetValue<MenuBool>().Enabled && R.IsReady() && ObjectManager.Player.CountEnemyHeroesInRange(750) >= 1)
+            {
+                R.Cast();
             }
 
         }
@@ -130,7 +125,7 @@
         {
 
             var qminions = GameObjects.EnemyMinions.Where(x => x.IsValidTarget(ObjectManager.Player.GetRealAutoAttackRange()) && x.IsMinion()).Cast<AIBaseClient>().ToList();
-
+            
             foreach (AIBaseClient minion in qminions)
             {
                 if (Q.IsReady())
@@ -174,32 +169,6 @@
                     break;
             }
         }
-
-        private static void OnDraw(EventArgs args)
-        {
-            
-            if (MainMenu["isDead"].GetValue<MenuBool>().Enabled)
-            {
-                if (ObjectManager.Player.IsDead)
-                {
-                    return;
-                }
-            }
-
-            // draw Q Range
-            if (MainMenu["Draw"]["drawQ"].GetValue<MenuBool>().Enabled)
-            {
-                
-                Render.Circle.DrawCircle(ObjectManager.Player.Position, Q.Range, Color.Black);
-            }
-
-            // draw E Range
-            if (MainMenu["Draw"]["drawE"].GetValue<MenuBool>().Enabled)
-            {
-
-                Render.Circle.DrawCircle(ObjectManager.Player.Position, E.Range, Color.Black);
-            }
-
-        }
+      
     }
 }
