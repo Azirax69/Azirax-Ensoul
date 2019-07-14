@@ -130,7 +130,8 @@ namespace Nasus
             {
                 if (Q.IsReady())
                 {
-                    Q.Cast();
+                    if (minion.Health <= Q.GetDamage(minion))
+                        Q.Cast();
                     // Thank you Putão com Tesão for helping me out on the nasus farm.
                 }
             }
@@ -147,7 +148,8 @@ namespace Nasus
             {
                 if (Q.IsReady())
                 {
-                    Q.Cast();
+                    if (minion.Health <= Q.GetDamage(minion))
+                        Q.Cast();
                     // Thank you Putão com Tesão for helping me out on the nasus farm.
                 }
             }
