@@ -228,8 +228,9 @@
 
         private static void OnUpdate(EventArgs args)
         {
+            ExecuteAdditionals();
             switch (Orbwalker.ActiveMode)
-            {
+            {    
                 case OrbwalkerMode.Combo:
                     Combo();
                     break;
