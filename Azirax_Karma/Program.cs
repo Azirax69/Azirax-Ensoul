@@ -61,7 +61,7 @@
             harassMenu.Add(new MenuSlider("ManaHarass", "Harass ManaPercent", 60, 0, 100));
             MainMenu.Add(harassMenu);
 
-
+            // vi essa aba misc no sharp e decidi colocar aqui também, o skin changer ainda não funciona, mas vou arrumar isso.
             var miscMenu = new Menu("Misc", "Misc");
             miscMenu.Add(new MenuBool("Eshield", "Make E Shield"));
             miscMenu.Add(new MenuBool("egapclose", "Use E on Gapclosers"));
