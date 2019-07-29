@@ -60,7 +60,7 @@ namespace Nasus
             lasthitMenu.Add(new MenuBool("farmQ", "Use Q", true));
             MainMenu.Add(lasthitMenu);
 
-            Chat.PrintChat("Azirax Nasus, Any problem, report in my discord = Azirax#5495");
+            Chat.Print("Azirax Nasus, Any problem, report in my discord = Azirax#5495");
 
 
             MainMenu.Attach();
