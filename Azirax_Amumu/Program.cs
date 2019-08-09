@@ -31,7 +31,7 @@
         private static void OnGameLoad()
         {
            
-            if (ObjectManager.Player.CharacterName != "Azirax_Amumu")
+            if (ObjectManager.Player.CharacterName != "Amumu")
             {
                 return;
             }
