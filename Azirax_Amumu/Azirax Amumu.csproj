@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{02E0D7FB-9569-4F55-8B4E-C1C9876DC09F}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>azirax_10</RootNamespace>
-    <AssemblyName>azirax 10</AssemblyName>
+    <RootNamespace>Azirax_Amumu</RootNamespace>
+    <AssemblyName>Azirax Amumu</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
