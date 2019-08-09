@@ -81,7 +81,7 @@
             Game.OnUpdate += OnUpdate;
             Drawing.OnDraw += OnDraw;
             Gapcloser.OnGapcloser += AntiGapcloser_OnEnemyGapcloser;
-            Chat.Print("Azirax Karma, Any problem, report in my discord = Azirax#5495");
+            Chat.Print("Azirax Karma, Any problem, report in my discord");
 
         }
 
