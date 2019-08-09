@@ -19,7 +19,6 @@
         private static Spell W;
         private static Spell E;
         private static Spell R;
-        private static SpellSlot Ignite;
 
 
         private static void Main(string[] args)
