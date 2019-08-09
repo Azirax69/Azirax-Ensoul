@@ -6,8 +6,6 @@ namespace Nasus
     using EnsoulSharp.SDK;
     using EnsoulSharp.SDK.MenuUI;
     using EnsoulSharp.SDK.MenuUI.Values;
-    using EnsoulSharp.SDK.Utility;
-    using Color = System.Drawing.Color;
 
     public class Program
     {
@@ -60,7 +58,7 @@ namespace Nasus
             lasthitMenu.Add(new MenuBool("farmQ", "Use Q", true));
             MainMenu.Add(lasthitMenu);
 
-            Chat.Print("Azirax Nasus, Any problem, report in my discord = Azirax#5495");
+            Chat.Print("Azirax Nasus, Any problem, report in my discord");
 
 
             MainMenu.Attach();
