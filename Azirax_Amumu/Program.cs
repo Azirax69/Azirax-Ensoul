@@ -60,14 +60,12 @@
             laneclearMenu.Add(new MenuBool("clearQ", "Use Q", true));
             laneclearMenu.Add(new MenuBool("clearW", "Use W", true));
             laneclearMenu.Add(new MenuBool("clearE", "Use E", true));
-            laneclearMenu.Add(new MenuSlider("ManaCheck", "Don't LaneClear if mana < %", 0, 0, 100));
             MainMenu.Add(laneclearMenu);
 
             var jungleclearMenu = new Menu("Jungle Clear", "JungleClear");
             jungleclearMenu.Add(new MenuBool("jungleQ", "Use Q", true));
             jungleclearMenu.Add(new MenuBool("jungleW", "Use W", true));
             jungleclearMenu.Add(new MenuBool("jungleE", "Use E", true));
-            jungleclearMenu.Add(new MenuSlider("ManaCheck", "Don't LaneClear if mana < %", 0, 0, 100));
             MainMenu.Add(jungleclearMenu);
 
             var drawMenu = new Menu("Draw", "Draw Settings");
