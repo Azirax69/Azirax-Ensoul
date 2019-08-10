@@ -67,7 +67,7 @@ namespace Nasus
  
         }
 
-        // ainda estou tentando corrigir os combos by: Azirax#5495
+        // ainda estou tentando corrigir os combos by: Azirax
         private static void Combo()
         {
 
